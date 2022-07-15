@@ -1,7 +1,7 @@
 // React
 import React, { useEffect, useState } from 'react';
 import { Link, useNavigate, useParams } from 'react-router-dom';
-import { PlayFill, Pause, StopFill } from 'react-bootstrap-icons';
+import { PlayFill } from 'react-bootstrap-icons';
 import { Fade } from 'react-reveal';
 
 // Components
@@ -43,19 +43,6 @@ const Ayat = () => {
         }, audio.duration * 1000);
     };
 
-    const pauseSoundHandler = (id) => {
-        setIsPlaySound(false);
-        let audio = document.getElementById(`audio-${id}`);
-        audio.pause();
-    };
-
-    const stopSoundHandler = (id) => {
-        setIsPlaySound(false);
-        let audio = document.getElementById(`audio-${id}`);
-        audio.pause();
-        audio.currentTime = 0;
-    };
-
     useEffect(() => {
         if (noSurah === undefined) return navigate('/surah');
         getSurah();
@@ -77,7 +64,7 @@ const Ayat = () => {
                             </div>
                         </div>
                     </Fade>
-                    <Fade right duration={1500} delay={500}>
+                    <Fade bottom duration={1500} delay={500}>
                         {alafasyAyat?.ayahs?.map((ayat, index) => (
                             <div className="row mt-5" key={ayat?.numberInSurah}>
                                 <div className="col-2 d-flex align-items-center">
@@ -92,12 +79,6 @@ const Ayat = () => {
                                 <div className="col-12 d-flex justify-content-end" style={{ gap: '1rem' }}>
                                     <button className="btn btn-success shadow-sm" onClick={() => playSoundHandler(index)} disabled={isPlaySound}>
                                         <PlayFill />
-                                    </button>
-                                    <button className="btn btn-success shadow-sm" onClick={() => pauseSoundHandler(index)} disabled={!isPlaySound}>
-                                        <Pause />
-                                    </button>
-                                    <button className="btn btn-success shadow-sm" onClick={() => stopSoundHandler(index)} disabled={!isPlaySound}>
-                                        <StopFill />
                                     </button>
                                 </div>
                                 <audio id={`audio-${index}`} src={ayat?.audio}></audio>

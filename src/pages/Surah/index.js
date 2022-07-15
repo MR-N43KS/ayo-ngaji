@@ -45,7 +45,7 @@ const Surah = () => {
                             </div>
                         </div>
                     </Fade>
-                    <Fade right duration={1500} delay={1400}>
+                    <Fade bottom duration={1500} delay={1400}>
                         <div className="row mt-4">
                             <div className="col-12">
                                 <div className="table-responsive">

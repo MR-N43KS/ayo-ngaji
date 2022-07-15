@@ -76,12 +76,13 @@ const Ayat = () => {
                                     </h3>
                                     <p className="text">{indonesianAyat?.ayahs[index]?.text}</p>
                                 </div>
-                                <div className="col-12 d-flex justify-content-end" style={{ gap: '1rem' }}>
+                                <div className="col-12 d-flex justify-content-end mt-4" style={{ gap: '1rem' }}>
                                     <button className="btn btn-success shadow-sm" onClick={() => playSoundHandler(index)} disabled={isPlaySound}>
                                         <PlayFill />
                                     </button>
                                 </div>
                                 <audio id={`audio-${index}`} src={ayat?.audio}></audio>
+                                <hr className="bg-success" style={{ width: '100%', height: '1px', opacity: '0.3' }} />
                             </div>
                         ))}
                     </Fade>

@@ -79,6 +79,7 @@ const Ayat = () => {
                                 <div className="col-12 d-flex justify-content-end mt-4" style={{ gap: '1rem' }}>
                                     <button className="btn btn-success shadow-sm" onClick={() => playSoundHandler(index)} disabled={isPlaySound}>
                                         <PlayFill />
+                                        <span className="ml-1">Play</span>
                                     </button>
                                 </div>
                                 <audio id={`audio-${index}`} src={ayat?.audio}></audio>

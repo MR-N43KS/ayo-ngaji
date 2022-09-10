@@ -7,18 +7,11 @@ const Footer = () => {
             <div className="container">
                 <div className="row text-center">
                     <div className="col-12 d-flex justify-content-center mb-3" style={{ gap: '1rem' }}>
-                        <a href="https://github.com/zachriek" className="btn btn-sm btn-outline-success shadow-sm" target="_blank" rel="noreferrer">
+                        <a href="https://github.com/MR-N43KS/ayo-ngaji" className="btn btn-sm btn-outline-success shadow-sm" target="_blank" rel="noreferrer">
                             <Github />
                         </a>
-                        <a href="https://www.youtube.com/channel/UCFbzQWPGA17_gKzotx207jQ" className="btn btn-sm btn-outline-success shadow-sm" target="_blank" rel="noreferrer">
-                            <Youtube />
-                        </a>
-                        <a href="https://www.instagram.com/zachriek/" className="btn btn-sm btn-outline-success shadow-sm" target="_blank" rel="noreferrer">
-                            <Instagram />
-                        </a>
-                    </div>
                     <div className="col-12">
-                        <p className="text">Copyright 2022 - Belajar Ngaji</p>
+                        <p className="text">Copyright 2022 - Ayo Ngaji By Intan</p>
                     </div>
                 </div>
             </div>

@@ -6,7 +6,7 @@ import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 
 const BaseLayout = ({ children, title }) => {
-    document.title = `${title ? title : ''} - Belajar Ngaji`;
+    document.title = `${title ? title : ''} - Ayo Ngaji`;
 
     return (
         <>

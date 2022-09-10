@@ -33,8 +33,8 @@ const Homepage = () => {
                     <div className="row d-none d-md-flex">
                         <Fade left duration={1500} delay={700}>
                             <div className="col-md-6 d-flex flex-column justify-content-center align-items-start">
-                                <h1 className="text-success mb-3">Belajar Ngaji</h1>
-                                <p className="text mb-4">Belajar Ngaji adalah sebuah website untuk menampilkan surah al-quran serta terjemahannya.</p>
+                                <h1 className="text-success mb-3">Ayo Ngaji</h1>
+                                <p className="text mb-4">Ayo Ngaji adalah sebuah website untuk menampilkan surah al-quran serta terjemahannya.</p>
                                 <Link to="/surah" className="btn btn-lg btn-success shadow-sm">
                                     Yuk Mulai
                                 </Link>
@@ -54,8 +54,8 @@ const Homepage = () => {
                         </Fade>
                         <Fade bottom duration={1500} delay={1400}>
                             <div className="col-12">
-                                <h1 className="text-success mb-3">Belajar Ngaji</h1>
-                                <p className="text mb-4">Belajar Ngaji adalah sebuah website untuk menampilkan surah al-quran serta terjemahannya.</p>
+                                <h1 className="text-success mb-3">Ayo Ngaji</h1>
+                                <p className="text mb-4">Ayo Ngaji adalah sebuah website untuk menampilkan surah al-quran serta terjemahannya.</p>
                                 <Link to="/surah" className="btn btn-success shadow-sm">
                                     Yuk Mulai
                                 </Link>
